@@ -25,11 +25,66 @@ Welcome to DeenStream Movie Gallery – a visually stunning, interactive web app
 
 ## 🏁 Want to run it yourself?
 
-- Set up the backend server (Spring Boot, MongoDB required).
-- Open the React project and install dependencies with `npm install`.
-- Start the frontend with `npm start`.
-- Visit `http://localhost:3000` in your browser to enjoy your movie gallery!
+### 1. Install Prerequisites
 
+- Node.js and npm (for frontend)
+- Java 17+ (for backend/Spring Boot)
+- MongoDB (for database)
+
+### 2. Clone or Download This Project
+
+- Use Git:
+git clone https://github.com/Deenprasath/deen-movie-gallery.git
+
+
+OR  
+- Click the green "Code" button and "Download ZIP"
+
+### 3. Set up MongoDB
+
+- Start MongoDB server (default port: 27017)
+- Optionally import sample data:
+mongoimport --db moviedb --collection movies --file movies-1.json --jsonArray
+
+
+
+### 4. Run the Backend (Spring Boot)
+
+- Open terminal and navigate to backend folder (like `movies`)
+cd fullstackproject/movies
+
+
+- Run:
+./mvnw spring-boot:run
+
+
+*or*
+mvn spring-boot:run
+
+
+- Backend runs on `http://localhost:8080`
+
+### 5. Run the Frontend (React)
+
+- Open terminal and navigate to frontend folder (like `movieist-frontend`)
+cd fullstackproject/movieist-frontend
+
+
+- Install dependencies:
+npm install
+
+
+- Start the React app:
+npm start
+
+
+- Frontend starts at `http://localhost:3000`
+
+### 6. Open the App in Browser
+
+- Go to `http://localhost:3000` to use the Movie Gallery
+
+---
 ---
 ## 📸 Project Screenshot
 
